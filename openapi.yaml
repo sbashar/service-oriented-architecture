@@ -1,0 +1,70 @@
+openapi: 3.0.1
+info:
+  title: PurchaseAPI
+  version: 0.0.2
+paths:
+  /purchase:
+    get:
+      operationId: getOrders
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+    post:
+      operationId: createOrder
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+  /purchase/{id}:
+    get:
+      operationId: getOrder
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+    put:
+      operationId: updateOrder
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
+    delete:
+      operationId: deleteOrder
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}

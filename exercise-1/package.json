@@ -1,0 +1,17 @@
+{
+  "name": "service-oriented-architecture-exercise-1",
+  "version": "1.0.0",
+  "description": "Exercise 1: writing a node server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Saydul Bashar",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "frisby": "^2.1.0"
+  }
+}
